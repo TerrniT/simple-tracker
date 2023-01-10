@@ -1,10 +1,13 @@
 import { Injectable } from '@angular/core';
-import { environment } from "../../environments/environment";
-import { AngularFireDatabase, AngularFireList } from "@angular/fire/compat/database";
-import { Habit } from "../models/habit";
+import { environment } from '../../environments/environment';
+import {
+  AngularFireDatabase,
+  AngularFireList,
+} from '@angular/fire/compat/database';
+import { Habit } from '../models/habit';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class HabitService {
   private collection = environment.collections.habits;

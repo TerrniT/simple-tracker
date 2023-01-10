@@ -4,8 +4,9 @@
   background-color: #ffffff;
   width: 300px;
   height: 250px;
-  border-radius: 15px;
+   border-radius: 15px;
   padding: 30px;
+  margin-bottom: 2rem;
 }
 
 
@@ -27,7 +28,7 @@ li {
 }
 
 .day_marked {
-  background-color: green;
+  background-color: rgba(13, 186, 13, 0.799);
   width: 10px;
   height: 10px;
   margin: 1px;
@@ -53,7 +54,7 @@ li {
   text-align: center;
   font-size: 12px;
   font-weight: 400;
-  color: #666565;
+  color: #666;
 }
 
 .sheet {

@@ -1,11 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Habit } from "../../models/habit";
-import { UtilService } from "../../services/util.service";
+import { Habit } from '../../models/habit';
+import { UtilService } from '../../services/util.service';
 
 @Component({
   selector: 'app-habit',
   templateUrl: './habit.component.html',
-  styleUrls: ['./habit.component.css']
+  styleUrls: ['./habit.component.css'],
 })
 export class HabitComponent implements OnInit {
   @Input() habit!: Habit;
@@ -23,7 +23,8 @@ export class HabitComponent implements OnInit {
   }
 
   private fillCells() {
-    this.habit.markedDays?.forEach(markedDay => this.cells.set(markedDay, true));
+    this.habit.markedDays?.forEach(markedDay =>
+      this.cells.set(markedDay, true)
+    );
   }
-
 }
